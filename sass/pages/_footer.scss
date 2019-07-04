@@ -1,0 +1,55 @@
+.footer {
+  background-color: $color-grey-dark;
+  padding: 5rem 0;
+  position: relative;
+
+  &__logo-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__nav-box {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    border-top: 1px solid $color-grey-light;
+    padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    color: $color-white;
+
+    & li {
+      display: inline-block;
+      font-size: 1rem;
+      
+      &:not(:first-child) {
+        padding-left: 5rem;
+      }
+    }
+  }
+
+  &__copyright-box {
+    width: 30%;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    border-top: 1px solid $color-grey-light;
+    padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  &__copyright {
+    color: $color-white;
+    font-size: 1rem;
+  }
+}
